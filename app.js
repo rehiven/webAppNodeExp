@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
+const port = process.env.PORT|| 3000;
 
 app.use(morgan('tiny')); //show information about browser request 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -12,10 +13,10 @@ app.use('/css',express.static(path.join(__dirname, '/node_modules/bootstrap/dist
 app.use('/js',express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));
 app.use('/js',express.static(path.join(__dirname, '/node_modules/jquery/dist')));
 
-app.get('/', function(req, res){
+app.get('/', (req, res)=>{
   res.sendfile(path.join(__dirname, 'views/index.html'));
 });
 
-app.listen(3000, function(){
-  debug(`listenig on port ${chalk.green('3000')}`);
+app.listen(port, ()=>{
+  debug(`listenig on port ${chalk.green(port)}`);
 });
