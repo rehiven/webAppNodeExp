@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.4.1",
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1"
   }
 }
