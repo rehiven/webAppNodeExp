@@ -1,3 +1,7 @@
 # webAppNodeExp
-example of web app with express and node js
- MONGO DB
+
+Course
+
+Building Web Applications with Node.js and Express 4.0 
+
+DB MongoDB local
