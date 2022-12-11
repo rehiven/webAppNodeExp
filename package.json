@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.0",
     "jquery": "^3.4.1",
     "mongodb": "^3.5.2",
